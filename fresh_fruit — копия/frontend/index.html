@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Fresh Fruit - Детекция повреждений плодов</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+
+<header class="site-header">
+    <div class="header-left">
+        
+        <h1>Fresh Fruit</h1>
+    </div>
+    <div class="header-right">
+        <button id="theme-toggle">Сменить тему</button>
+    </div>
+</header>
+
+<div class="container">
+    <div class="header">
+        <h2>Детекция повреждений <span>плодов</span> по фото</h2>
+        <p>Загрузите изображение фрукта или овоща — сайт оценит качество, выявит дефекты и покажет уверенность модели.</p>
+    </div>
+
+    <div class="main-content">
+        <div class="upload-panel">
+            <input type="file" id="file-input" accept="image/*" class="file-input">
+            <div class="drop-area" id="drop-area">
+                
+                <p>Перетащите изображение сюда или нажмите для выбора</p>
+            </div>
+            <button id="analyze-btn">Анализировать</button>
+            <button id="reset-btn">Сбросить фото</button>
+            <div id="status">Статус: Ожидание изображения</div>
+        </div>
+
+        <div class="result-panel">
+            <div class="result-card" id="result-card">
+                <p id="verdict">Нет данных</p>
+                <p id="damage-type">Тип повреждения: -</p>
+                <p id="comment">Комментарий: -</p>
+                <p id="confidence">Уверенность модели: -</p>
+                <p id="time">Время обработки: -</p>
+                <button id="download-btn">Скачать результат</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
